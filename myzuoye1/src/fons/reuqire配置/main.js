@@ -1,0 +1,11 @@
+require.config({
+    baseUrl:"js/module",//根路径，加载模块在这个路径基础上去查找
+    paths:{
+        x:"a/b/aaaaaaaaaaaaa"
+    }
+})
+require(["../mod","mod2","x"],function(m,m1,m2){
+    m.fn();
+    m1.ff();
+    m2.f3();
+})
